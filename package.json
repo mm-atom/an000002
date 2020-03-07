@@ -1,7 +1,7 @@
 {
 	"name": "@mmstudio/an000002",
 	"version": "1.0.0",
-	"description": "Interface",
+	"description": "组件mm接口定义",
 	"scripts": {
 		"test": "tsc && ava ./tests/*.js",
 		"watch": "tsc -w & ava --watch ./tests/*.js",
@@ -36,7 +36,9 @@
 		}
 	],
 	"license": "MIT",
-	"dependencies": {},
+	"peerDependencies": {
+		"node-html-parser": "*"
+	},
 	"devDependencies": {
 		"@typescript-eslint/eslint-plugin": "latest",
 		"@typescript-eslint/parser": "latest",
@@ -45,6 +47,7 @@
 		"eslint": "latest",
 		"eslint-config-prettier": "latest",
 		"eslint-plugin-import": "latest",
+		"node-html-parser": "latest",
 		"typescript": "next"
 	}
 }

@@ -1,1 +1,1 @@
-# Interface
+# 组件mm接口定义
