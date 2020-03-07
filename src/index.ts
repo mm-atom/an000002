@@ -13,7 +13,6 @@ export interface ICommonParams {
 	params: unknown;
 	query: unknown;
 	remote_address: string;
-	spaceid: string;
 	url: string;
 	[key: string]: unknown;
 }
@@ -34,8 +33,6 @@ export default interface IAiNodejsComponent extends IAi {
 		readonly msg: ICommonParams;
 		readonly headers: IHeaders;
 		readonly actionid: string;
-		readonly sessionid: string;
-		readonly spaceid: string;
 		readonly no: string;
 		readonly node: NodeHTMLElement;
 		readonly params: { [key: string]: unknown };
