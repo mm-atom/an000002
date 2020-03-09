@@ -30,12 +30,11 @@ export interface IAi {
 export default interface IAiNodejsComponent extends IAi {
 	readonly data: {
 		readonly [attr: string]: unknown;
-		readonly msg: ICommonParams;
 		readonly headers: IHeaders;
 		readonly actionid: string;
 		readonly no: string;
 		readonly node: NodeHTMLElement;
-		readonly params: { [key: string]: unknown };
+		readonly params: { [key: string]: string; };
 		readonly url: string;
 	};
 	// eslint-disable-next-line semi
